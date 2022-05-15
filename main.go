@@ -29,6 +29,8 @@ func main() {
 
 	e.POST("/users/signup", controllers.SignUp)
 	e.POST("/users/login", controllers.LogIn)
+	e.GET("/user", controllers.Getuser)
+	e.GET("/users", controllers.GetUsers)
 	e.Start(":" + port)
 
 }
